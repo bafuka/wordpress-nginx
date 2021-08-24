@@ -7,7 +7,7 @@ This repository contains the Nginx configurations used within the series [Hostin
 * fastcgi-cache.com - WordPress with [FastCGI caching](https://deliciousbrains.com/hosting-wordpress-yourself-server-monitoring-caching/#page-cache)
 * ssl-fastcgi-cache.com - WordPress on HTTPS with FastCGI caching
 * multisite-subdomain.com - WordPress Multisite install using subdomains
-* multisite-subdirectory.com - WordPress Multisite install using subdirectories
+* shitizhijia.com - WordPress Multisite install using subdirectories
 
 Looking for a modern hosting environment provisioned using Ansible? Check out [WordPress Ansible](https://github.com/A5hleyRich/wordpress-ansible).
 
