@@ -4,14 +4,14 @@ server {
     listen [::]:443 ssl http2;
 
     # Server name to listen for
-    server_name ssl-multisite-subdomain.com *.ssl-multisite-subdomain.com;
+    server_name shitizhijia.com *.shitizhijia.com;
 
     # Path to document root
-    root /sites/ssl-multisite-subdomain.com/public;
+    root /sites/shitizhijia.com/public;
 
     # Paths to certificate files.
-    ssl_certificate /etc/letsencrypt/live/ssl-multisite-subdomain.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ssl-multisite-subdomain.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/shitizhijia.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/shitizhijia.com/privkey.pem;
 
     # File to be used as index
     index index.php;
@@ -21,8 +21,8 @@ server {
     access_log /var/log/nginx/access.log;
 
     # Site specific logs.
-    access_log /sites/ssl-multisite-subdomain.com/logs/access.log;
-    error_log /sites/ssl-multisite-subdomain.com/logs/error.log;
+    access_log /sites/shitizhijia.com/logs/access.log;
+    error_log /sites/shitizhijia.com/logs/error.log;
 
     # Default server block rules
     include global/server/defaults.conf;
@@ -57,16 +57,16 @@ server {
 server {
     listen 80;
     listen [::]:80;
-    server_name ssl-multisite-subdomain.com www.ssl-multisite-subdomain.com;
+    server_name shitizhijia.com www.shitizhijia.com;
 
-    return 301 https://ssl-multisite-subdomain.com$request_uri;
+    return 301 https://shitizhijia.com$request_uri;
 }
 
 # Redirect www to non-www
 server {
     listen 443;
     listen [::]:443;
-    server_name www.ssl-multisite-subdomain.com;
+    server_name www.shitizhijia.com;
 
-    return 301 https://ssl-multisite-subdomain.com$request_uri;
+    return 301 https://shitizhijia.com$request_uri;
 }

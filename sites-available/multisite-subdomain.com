@@ -4,10 +4,10 @@ server {
 	listen [::]:80;
 
 	# Server name to listen for
-	server_name multisite-subdomain.com *.multisite-subdomain.com;
+	server_name shitizhijia.com *.shitizhijia.com;
 
 	# Path to document root
-	root /sites/multisite-subdomain.com/public;
+	root /sites/shitizhijia.com/public;
 
 	# File to be used as index
 	index index.php;
@@ -17,8 +17,8 @@ server {
 	access_log /var/log/nginx/access.log;
 
 	# Site specific logs.
-	access_log /sites/multisite-subdomain.com/logs/access.log;
-	error_log /sites/multisite-subdomain.com/logs/error.log;
+	access_log /sites/shitizhijia.com/logs/access.log;
+	error_log /sites/shitizhijia.com/logs/error.log;
 
 	# Default server block rules
 	include global/server/defaults.conf;
@@ -50,7 +50,7 @@ server {
 server {
 	listen 80;
 	listen [::]:80;
-	server_name www.multisite-subdomain.com;
+	server_name www.shitizhijia.com;
 
-	return 301 $scheme://multisite-subdomain.com$request_uri;
+	return 301 $scheme://shitizhijia.com$request_uri;
 }

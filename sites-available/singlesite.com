@@ -4,10 +4,10 @@ server {
 	listen [::]:80;
 
 	# Server name to listen for
-	server_name singlesite.com;
+	server_name shitizhijia.com;
 
 	# Path to document root
-	root /sites/singlesite.com/public;
+	root /sites/shitizhijia.com/public;
 
 	# File to be used as index
 	index index.php;
@@ -17,8 +17,8 @@ server {
 	access_log /var/log/nginx/access.log;
 
 	# Site specific logs.
-	access_log /sites/singlesite.com/logs/access.log;
-	error_log /sites/singlesite.com/logs/error.log;
+	access_log /sites/shitizhijia.com/logs/access.log;
+	error_log /sites/shitizhijia.com/logs/error.log;
 
 	# Default server block rules
 	include global/server/defaults.conf;
@@ -50,7 +50,7 @@ server {
 server {
 	listen 80;
 	listen [::]:80;
-	server_name www.singlesite.com;
+	server_name www.shitizhijia.com;
 
-	return 301 $scheme://singlesite.com$request_uri;
+	return 301 $scheme://shitizhijia.com$request_uri;
 }
